@@ -36,12 +36,8 @@ def result():
         to_predict_list=list(to_predict_list.values())
         to_predict_list = list(map(float, to_predict_list))
         result = ValuePredictor(to_predict_list)
-        if int(result)==1:
-            prediction='Terdapat tanda dari Retinopati Diabetik'
-        else:
-            prediction='Tidak ada tanda terjadi Retinopati Diabetik'
     
-    return render_template("result.html",prediction=prediction, result=result)
+    return render_template("result.html", result=result)
 
 if __name__ == "__main__":
     app.debug=True
