@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+{% block style %}
+    <style>
+        
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h4 {
+            padding-top: 20px;
+            font-size: 18px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+
+        img {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    {% include '_navbar.html' %}
+    <div class="container">
+        <div class="col-md-12 text-center mt-5 mb-5">
+            <img src="static/logoits.png" alt="">
+            <img src="static/logosiits.png" alt="">
+        </div>
+
+        <div class="col-md-12 text-center">
+            <h1>Final Project Analitika Bisnis B</h1>
+            <h2>Prediksi Diabetik Retinopati</h2>
+            <h4>Dibuat oleh : </h4>
+            <p>Adhi Yoga Muris P</p>
+            <p>Muhammad Ikram Farisi</p>
+        </div>
+    </div>
+{% endblock %}

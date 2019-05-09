@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block style %}
+    <style>
+        img {
+            height: 200px;
+            width: auto;
+            margin-bottom: 20px;
+            border-radius: 100%;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+{% include '_navbar.html' %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <img src="static/adhiyoga.png" alt="">
+            <h3>Adhi Yoga Muris P.</h3>
+            <h5>05211640000073</h5>
+            <h5>Analitika Bisnis B</h5>
+        </div>
+
+        <div class="col-md-6 text-center">
+            <img src="static/faris.jpg" alt="">
+            <h3>Muhammad Ikram Farisi</h3>
+            <h5>05211640000091</h5>
+            <h5>Analitika Bisnis B</h5>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,104 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+{% include '_navbar.html'  %}
+<div class="container mb-5">
+    <div class="col-md-12 text-center mb-5 mt-4">
+        <h3>Deteksi Retinopati Diabetik</h3>
+    </div>
+
+    <form action="/result" method="POST">
+        <div class="row">
+            <div class="form-group col-md-6">
+                <label for="0">0: Quality Assesment</label>
+                <input type="text" id="0" name="0" class="form-control" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="1">1: Retinal Abnormality</label>
+                <input type="text" id="1" name="1" class="form-control" required>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <!-- <div class="form-group col-md-4">
+                <label for="2">2: MA Detection 1</label>
+                <input type="text" id="2" name="2" class="form-control" required>
+            </div> -->
+
+            <div class="form-group col-md-4">
+                <label for="3">3: MA Detection 2</label>
+                <input type="text" id="3" name="3" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="4">4: MA Detection 3</label>
+                <input type="text" id="4" name="4" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="5">5: MA Detection 4</label>
+                <input type="text" id="5" name="5" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="6">6: MA Detection 5</label>
+                <input type="text" id="6" name="6" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="7">7: MA Detection 6</label>
+                <input type="text" id="7" name="7" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="8">8: MA Detection 7</label>
+                <input type="text" id="8" name="8" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="9">9: MA Detection 8</label>
+                <input type="text" id="9" name="9" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="10">10: MA Detection 9</label>
+                <input type="text" id="10" name="10" class="form-control" required>
+            </div>
+
+
+            <div class="form-group col-md-4">
+                <label for="11">11: MA Detection 10</label>
+                <input type="text" id="11" name="11" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="12">12: MA Detection 11</label>
+                <input type="text" id="12" name="12" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="13">13: MA Detection 12</label>
+                <input type="text" id="13" name="13" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="14">14: MA Detection 13</label>
+                <input type="text" id="14" name="14" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="15">15: MA Detection 14</label>
+                <input type="text" id="15" name="15" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="16">16: Euclidean Distance</label>
+                <input type="text" id="16" name="16" class="form-control" required>
+            </div>
+        </div>
+        
+        <input type="submit" value="Predict!" class="btn btn-primary">
+    </form>
+</div>
+{% endblock %}

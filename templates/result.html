@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+{% block style %}
+<style>
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+{% include '_navbar.html' %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Hasil Prediksi</h1>
+                </div>
+                <div class="card-body">
+                    <h2>
+                        {% if result == 1 %}
+                        <span class="badge badge-danger">Terdapat tanda adanya Diabetik Retinopati</div>
+                        {% else %}
+                        <span class="badge badge-success">Tidak ada tanda Diabetik Retinopati</span>
+                        {% endif %}
+
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
