@@ -23,7 +23,7 @@ def tentang_kami():
 def predict():
     return render_template('predict.html')
 
-def ValuePredictor(to_predict_list):
+def valuePredictor(to_predict_list):
     to_predict = np.array(to_predict_list).reshape(1,19)
     loaded_model = pickle.load(open("final_model.pkl","rb"))
     result = loaded_model.predict(to_predict)
@@ -35,10 +35,10 @@ def result():
         to_predict_list = request.form.to_dict()
         to_predict_list=list(to_predict_list.values())
         to_predict_list = list(map(float, to_predict_list))
-        result = ValuePredictor(to_predict_list)
+        result = valuePredictor(to_predict_list)
     
     return render_template("result.html", result=result)
 
 if __name__ == "__main__":
-    app.debug=True
+    app.debug=False
     app.run()
